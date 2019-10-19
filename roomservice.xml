@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-<!-- armani source -->
-<project path="kernel/xiaomi/armani" name="hemantbeast/xiaomi_armani_kernel" remote="github" revision="cm-14.0" />
-<project path="device/xiaomi/armani" name="hemantbeast/android_device_xiaomi_armani" remote="github" revision="n7.0" />
-<project path="vendor/xiaomi" name="hemantbeast/proprietary_vendor_xiaomi" remote="github" revision="cm-14.0" />
-<project path="vendor/qcom/binaries" name="TheMuppets/proprietary_vendor_qcom_binaries" remote="github" revision="cm-14.0" />
-
-<!-- External Dependencies -->
-<project path="device/qcom/common" name="CyanogenMod/android_device_qcom_common" remote="github" revision="cm-14.0" />
+<!-- santoni source -->
+<project path="device/xiaomi/santoni" name="AICP/device_xiaomi_santoni" revision="p9.0" remote="github" />
+<project path="vendor/xiaomi" name="AICP/proprietary_vendor_xiaomi" revision="p9.0" remote="github" />
+<project path="kernel/xiaomi/santoni" name="hemantbeast/android_kernel_xiaomi_santoni" revision="p9.0" remote="github" />
+<project path="packages/resources/devicesettings" name="android_packages_resources_devicesettings" remote="lineage" />
 
 </manifest>
