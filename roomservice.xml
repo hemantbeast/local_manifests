@@ -1,28 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-<!-- santoni source -->
-<project path="device/xiaomi/santoni" name="AICP/device_xiaomi_santoni" revision="p9.0" remote="aicp" />
-<project path="vendor/xiaomi" name="AICP/proprietary_vendor_xiaomi" revision="p9.0" remote="aicp" />
-<project path="kernel/xiaomi/santoni" name="hemantbeast/android_kernel_xiaomi_santoni" revision="p9.0" remote="github" />
-<project path="packages/resources/devicesettings" name="android_packages_resources_devicesettings" remote="lineage" />
+  <remote fetch="https://gitlab.com/" name="gitlab" />
 
-<!-- dumpling source -->
-<project path="device/oppo/common" name="AICP/device_oppo_common" remote="aicp" />
-<project path="device/oneplus/dumpling" name="AICP/device_oneplus_dumpling" remote="aicp" />
-<project path="device/oneplus/dumpling" name="AICP/device_oneplus_msm8998-common" remote="aicp" />
-<project path="vendor/oneplus" name="AICP/proprietary_vendor_oneplus" remote="aicp" />
-<project path="kernel/oneplus/msm8998" name="AICP/kernel_oneplus_msm8998" revision="q10.0-194" remote="aicp" />
+  <!--dumpling source-->
+  <project name="hemantbeast/device_oneplus_dumpling" path="device/oneplus/dumpling" remote="github" revision="q10.0-new" />
+  <project name="hemantbeast/device_oneplus_msm8998-common" path="device/oneplus/msm8998-common" remote="github" revision="q10.0-cr" />
+  <project name="hemantbeast/proprietary_vendor_oneplus" path="vendor/oneplus" remote="github" revision="q10.0-new" />
+  <project name="op5-q/kernel_oneplus_msm8998" path="kernel/oneplus/nos-msm8998" remote="github" revision="ten-wip" />
+  <project name="DerpFest-Devices/du_kernel_oneplus_msm8998" path="kernel/oneplus/msm8998" remote="github" revision="ten" />
+  <project name="crdroidandroid/android_kernel_oneplus_msm8998" path="kernel/oneplus/cr-msm8998" remote="github" revision="10.0" />
+  <project name="DerpFest-Devices/vendor_addons_onepluscamera" path="vendor/addons/onepluscamera" remote="github" revision="ten" />
 
-<!-- opengapps -->
-<remote name="opengapps" fetch="https://github.com/opengapps/" />
-<remote name="opengapps-gitlab" fetch="https://gitlab.opengapps.org/opengapps/" />
+  <!--santoni source-->
+  <project name="hemantbeast/android_device_xiaomi_santoni" path="device/xiaomi/santoni" remote="gitlab" revision="q10.0-new" />
+  <project name="hemantbeast/santoni_kernel" path="kernel/xiaomi/santoni" remote="gitlab" revision="q10.0-new" />
+  <project name="hemantbeast/proprietary_vendor_xiaomi" path="vendor/xiaomi" remote="gitlab" revision="q10.0-new" />
 
-<project path="vendor/opengapps/build" name="aosp_build" revision="master" remote="opengapps" />
-<project path="vendor/opengapps/sources/all" name="all" clone-depth="1" revision="master" remote="opengapps-gitlab" />
+  <!--gapps-->
+  <project clone-depth="1" name="DerpFest/vendor_gapps" path="vendor/gapps" remote="gitlab" revision="ten" />
 
-<!-- arm64 depends on arm -->
-<project path="vendor/opengapps/sources/arm" name="arm" clone-depth="1" revision="master" remote="opengapps-gitlab" />
-<project path="vendor/opengapps/sources/arm64" name="arm64" clone-depth="1" revision="master" remote="opengapps-gitlab" />
+  <!--aicp extras-->
+  <project name="AICP/packages_apps_PartsBin" path="packages/apps/PartsBin" remote="aicp" revision="q10.0" />
+  <project name="AICP/packages_resources_deviceparts" path="packages/resources/deviceparts" remote="aicp" revision="q10.0" />
+  <project name="PixelExperience/external_motorola_faceunlock" path="external/motorola/faceunlock" remote="github" revision="ten" />
+
+  <!--telephony stuff-->
+  <project name="crdroidandroid/android_frameworks_opt_net_ims" path="frameworks/opt/net/ims" remote="github" revision="10.0" />
+  <project name="crdroidandroid/android_frameworks_opt_telephony" path="frameworks/opt/telephony" remote="github" revision="10.0" />
+  <project name="crdroidandroid/android_packages_services_Telephony" path="packages/services/Telephony" remote="github" revision="10.0" />
 
 </manifest>
